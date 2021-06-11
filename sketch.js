@@ -51,10 +51,7 @@ function draw() {
       'y': position.y + y
     });
   }
-  feedTime = database.ref("FeedTime");
-  feedTime.on("value", function (data) {
-    lastFed = data.val();
-  });
+
   fill(255, 255, 254)
   textSize(15);
   if (lastFed >= 12) {
